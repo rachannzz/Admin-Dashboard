@@ -1,0 +1,28 @@
+
+.main-container{
+display: grid;
+grid-template-columns:1fr 4fr;
+grid-area: auto;
+
+
+
+}
+.nav{
+display: grid;
+border: 1px solid darkblue;
+grid-area: 2/-2;
+gap: 2px;
+}
+
+.sidebar{
+display: grid;
+border: 1px solid darkmagenta;
+grid-row:2/4;
+gap: 2px;
+}
+
+.container{
+display: grid;
+border: 1px solid darkred;
+grid-row: 3/4;
+}
