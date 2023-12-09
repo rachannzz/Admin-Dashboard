@@ -1,28 +1,129 @@
 
-.main-container{
-display: grid;
-grid-template-columns:1fr 4fr;
-grid-area: auto;
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-.nav{
-display: grid;
-border: 1px solid darkblue;
-grid-area: 2/-2;
-gap: 2px;
+
+body {
+    font-size: 20px;
+    max-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  .nav{
+    margin-top: 5px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2/4;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid red;
+    
+    }
+  .searchbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .noti
+     {
+      max-width: 20%;
+      height: 100%;
+      border-radius: 100%;
+    }
+  
+  .notification{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .names{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    
+  }
+  
+  .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+    align-items: center;
+  }
+  
+
+
+
+.button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
 }
+
+.button-68:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-68:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-68:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+  .main-container{
+    display: grid;
+  grid-template-columns:1fr 4fr;
+  }
+
+
 
 .sidebar{
 display: grid;
-border: 1px solid darkmagenta;
-grid-row:2/4;
-gap: 2px;
+grid-row:1/4;
+
 }
 
+
+
+
 .container{
-display: grid;
-border: 1px solid darkred;
-grid-row: 3/4;
+display: grid;   
+grid-column: 2/4;
+
 }
+
+
