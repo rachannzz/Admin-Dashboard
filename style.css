@@ -8,7 +8,7 @@
 }
 
 body {
-    font-size: 20px;
+   
     max-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
@@ -18,6 +18,7 @@ body {
     grid-template-columns:1fr 4fr;
   }
   .nav{
+    font-size: 20px;
     gap: 2em;
     padding: 1em;
     display: grid;
@@ -32,25 +33,36 @@ body {
     justify-content: flex-start;
     align-items: center;
 
+
   }
+
   .names{
     display: flex;
     gap: 10px;
     justify-content: flex-start;
     align-items: center;
   }
+  .dark{
+    font-size: 20px;
+   font-weight:1000;
+  }
   input{
     width: 80%;
     height: 50%;
     border-radius: 4em;
+    background-color: lightcyan;
   }
   .svg{
     max-width: 5%;
       height: 100%;
+      min-width: auto;
+      min-height: auto;
   }
   .svgs{
     max-width: 5%;
       height: 100%;
+      min-width: auto;
+      min-height: auto;
   }
   .noti
      {
@@ -74,6 +86,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap:40px;
     align-items: center;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+    flex-wrap: wrap;
   }
 .button {
   appearance: none;
@@ -122,19 +140,58 @@ body {
   box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
 
-
-
-
 .sidebar{
+  
+ 
 display: grid;
 grid-row:1/4;
+gap: 40px;
+background-color: beige;
+width: 100%;
+height: 100vh;
+
+margin: 0 auto
+
+
+}
+.section1 > li, .section2 > li{
+    
+  height: 3rem;
+ padding-left: 70px;
+  
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  align-items: center;
+  gap: 1.5rem;
 
 }
 
+.header{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.header img{
+  max-width: 20%;
+  height: 100%;
+  min-width: auto;
+  min-height: auto;
+ 
+}
 
 
-
-
+.sidebar p{
+  font-size: 20px;
+}
+.svgss{
+  max-width: 100%;
+  height: 100%;
+  min-width: auto;
+  min-height: auto;
+}
 .container{
 display: grid;   
 grid-column: 2/4;
